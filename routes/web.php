@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginationController;
+use App\Http\Controllers\DynamicInputController;
 
 
 /*
@@ -18,5 +19,15 @@ use App\Http\Controllers\PaginationController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+/**
+ * Pagination Routes
+ */
 Route::get('/pagination', [PaginationController::class, 'pagination']);
+
+/**
+ * Dynamic Input field Routes
+ */
+Route::get('/dynamic-input', [DynamicInputController::class, 'index']);
+Route::get('/dynamic-input/create', [DynamicInputController::class, 'create']);
+Route::post('/dynamic-input/store', [DynamicInputController::class, 'store'])->name('dynamic-input.store');
+

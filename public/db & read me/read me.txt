@@ -1,0 +1,2 @@
+create a database name: resource_web_laravel
+and import resource_web_laravel.sql file
