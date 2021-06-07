@@ -43,15 +43,17 @@ class DynamicInputController extends Controller
             'phone' => 'required|unique:dynamic_inputs',
         ]);
 
-        $data = new DynamicInput;
-        $data->user_name = $request->user_name;
-        $data->email = $request->email;
-        $data->phone = $request->phone;
+        for ($i = 0; $i< count($request->user_name); $i++) {
+            $data[] = [
+                'user_name' => $request->user_name[$i],
+                'email' => $request->email[$i],
+                'phone' => $request->phone[$i]    
+            ];
+        }
         // return response()->json($data);
-        $data->save();
+        $res = DynamicInput::insert($data);
 
-
-        if($data) {
+        if($res) {
             $notification = array(
                 'message' => 'Alhamdulillah, Data is successfully inserted',
                 'alert-type' => 'success'
