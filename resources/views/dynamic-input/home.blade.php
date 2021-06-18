@@ -72,30 +72,6 @@
     <script src="{{ asset('public/assets/toastr_scripts.js') }}"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#add_dynamic_button').on('click', function () {
-                var html = '';
-                html += '<tr>';
-                html += '';
-                html +=
-                    '<td><input type="text" name="user_name[]" placeholder="Enter Name" class="form-control"></td>';
-                html +=
-                    '<td><input type="email" name="email[]" placeholder="Enter Email" class="form-control"></td>';
-                html +=
-                    '<td><input type="phone" name="phone[]" placeholder="Enter Phone" class="form-control"></td>';
-                html +=
-                    '<td class="text-center"><button type="button" style="border: none; background-color: white;" id="remove_dynamic_input"><i class="fas fa-minus-square" style="font-size: 2em"></i></button></td>';
-                html += '</tr>';
-                $('tbody').append(html);
-            });
-            $(document).on('click', '#remove_dynamic_input', function () {
-                $(this).closest('tr').remove();
-            });
-        });
-
-    </script>
-
-    <script>
         @if(Session::has('message'))
 
         var type = "{{ Session::get('alert-type', 'success') }}"

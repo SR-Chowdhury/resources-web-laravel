@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginationController;
 use App\Http\Controllers\DynamicInputController;
+use App\Http\Controllers\CkEditorController;
 
 
 /*
@@ -30,4 +31,8 @@ Route::get('/pagination', [PaginationController::class, 'pagination']);
 Route::get('/dynamic-input', [DynamicInputController::class, 'index']);
 Route::get('/dynamic-input/create', [DynamicInputController::class, 'create']);
 Route::post('/dynamic-input/store', [DynamicInputController::class, 'store'])->name('dynamic-input.store');
+/**
+ * Ck-Editor Routes
+ */
+Route::get('/ck-editor', [CkEditorController::class, 'index']);
 

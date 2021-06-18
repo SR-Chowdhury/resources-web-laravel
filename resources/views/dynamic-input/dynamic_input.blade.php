@@ -44,13 +44,13 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <input type="text" name="user_name" placeholder="Enter Name" class="form-control">
+                                    <input type="text" name="user_name[]" placeholder="Enter Name" class="form-control">
                                 </td>
                                 <td>
-                                    <input type="email" name="email" placeholder="Enter Email" class="form-control">
+                                    <input type="email" name="email[]" placeholder="Enter Email" class="form-control">
                                 </td>
                                 <td>
-                                    <input type="phone" name="phone" placeholder="Enter Phone" class="form-control">
+                                    <input type="phone" name="phone[]" placeholder="Enter Phone" class="form-control">
                                 </td>
                                 <td class="text-center">
                                     <button type="button" style="border: none; background-color: white;" id="add_dynamic_button"><i class="fas fa-plus-square" style="font-size: 2em"></i></button>
@@ -84,10 +84,9 @@
             $('#add_dynamic_button').on('click', function() {
                 var html = '';
                 html+= '<tr>';
-                html+='';
-                html+='<td><input type="text" name="user_name" placeholder="Enter Name" class="form-control"></td>';
-                html+='<td><input type="email" name="email" placeholder="Enter Email" class="form-control"></td>';
-                html+='<td><input type="phone" name="phone" placeholder="Enter Phone" class="form-control"></td>';
+                html+='<td><input type="text" name="user_name[]" placeholder="Enter Name" class="form-control"></td>';
+                html+='<td><input type="email" name="email[]" placeholder="Enter Email" class="form-control"></td>';
+                html+='<td><input type="phone" name="phone[]" placeholder="Enter Phone" class="form-control"></td>';
                 html+='<td class="text-center"><button type="button" style="border: none; background-color: white;" id="remove_dynamic_input"><i class="fas fa-minus-square" style="font-size: 2em"></i></button></td>';
                 html+= '</tr>';
                 $('tbody').append(html);

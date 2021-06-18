@@ -39,15 +39,15 @@ class DynamicInputController extends Controller
         // return response()->json($request->user_name);
         $validate = $request->validate([
             'user_name' => 'required',
-            'email' => 'required|unique:dynamic_inputs',
-            'phone' => 'required|unique:dynamic_inputs',
+            'email' => 'required',
+            'phone' => 'required',
         ]);
 
         for ($i = 0; $i< count($request->user_name); $i++) {
             $data[] = [
                 'user_name' => $request->user_name[$i],
                 'email' => $request->email[$i],
-                'phone' => $request->phone[$i]    
+                'phone' => $request->phone[$i]
             ];
         }
         // return response()->json($data);
