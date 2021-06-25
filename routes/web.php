@@ -5,6 +5,7 @@ use App\Http\Controllers\PaginationController;
 use App\Http\Controllers\DynamicInputController;
 use App\Http\Controllers\CkEditorController;
 use App\Http\Controllers\SideNavController;
+use App\Http\Controllers\CurbBackController;
 
 
 /*
@@ -37,6 +38,10 @@ Route::post('/dynamic-input/store', [DynamicInputController::class, 'store'])->n
  */
 Route::get('/ck-editor', [CkEditorController::class, 'index']);
 /**
- * Ck-Editor Routes
+ * Side Navbar Routes
  */
 Route::get('/side-nav/v1', [SideNavController::class, 'v1Method']);
+/**
+ * Curb - Background Routes
+ */
+Route::get('/curb-background/v1', [CurbBackController::class, 'v1Method']);
