@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginationController;
 use App\Http\Controllers\DynamicInputController;
 use App\Http\Controllers\CkEditorController;
+use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\SideNavController;
 use App\Http\Controllers\CurbBackController;
 
@@ -37,6 +38,11 @@ Route::post('/dynamic-input/store', [DynamicInputController::class, 'store'])->n
  * Ck-Editor Routes
  */
 Route::get('/ck-editor', [CkEditorController::class, 'index']);
+/**
+ * Navbar Routes
+ */
+Route::get('/navbar/v1', [NavbarController::class, 'v1Method']);
+Route::get('/navbar/v2', [NavbarController::class, 'v2Method']);
 /**
  * Side Navbar Routes
  */
