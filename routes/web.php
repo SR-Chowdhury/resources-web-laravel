@@ -43,6 +43,11 @@ Route::get('/ck-editor', [CkEditorController::class, 'index']);
  */
 Route::get('/navbar/v1', [NavbarController::class, 'v1Method']);
 Route::get('/navbar/v2', [NavbarController::class, 'v2Method']);
+Route::get('/navbar/v3', [NavbarController::class, 'v3Method']);
+Route::get('/navbar/v4', [NavbarController::class, 'v4Method']);
+Route::get('/navbar/v5', [NavbarController::class, 'v5Method']);
+Route::get('/navbar/v6', [NavbarController::class, 'v6Method']);
+Route::get('/navbar/v7', [NavbarController::class, 'v7Method']);
 /**
  * Side Navbar Routes
  */
