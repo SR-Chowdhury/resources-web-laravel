@@ -27,4 +27,7 @@ class NavbarController extends Controller
     public function v7Method () {
         return view('navbar.v7');
     }
+    public function v8Method () {
+        return view('navbar.v8');
+    }
 }

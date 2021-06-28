@@ -48,6 +48,7 @@ Route::get('/navbar/v4', [NavbarController::class, 'v4Method']);
 Route::get('/navbar/v5', [NavbarController::class, 'v5Method']);
 Route::get('/navbar/v6', [NavbarController::class, 'v6Method']);
 Route::get('/navbar/v7', [NavbarController::class, 'v7Method']);
+Route::get('/navbar/v8', [NavbarController::class, 'v8Method']);
 /**
  * Side Navbar Routes
  */
