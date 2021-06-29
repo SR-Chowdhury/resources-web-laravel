@@ -7,6 +7,7 @@ use App\Http\Controllers\CkEditorController;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\SideNavController;
 use App\Http\Controllers\CurbBackController;
+use App\Http\Controllers\TestimonialController;
 
 
 /*
@@ -58,3 +59,15 @@ Route::get('/side-nav/v1', [SideNavController::class, 'v1Method']);
  * Curb - Background Routes
  */
 Route::get('/curb-background/v1', [CurbBackController::class, 'v1Method']);
+/**
+ * Testimonial Routes
+ */
+Route::get('/testimonial/v1', [TestimonialController::class, 'v1Method']);
+Route::get('/testimonial/v2', [TestimonialController::class, 'v2Method']);
+Route::get('/testimonial/v3', [TestimonialController::class, 'v3Method']);
+Route::get('/testimonial/v4', [TestimonialController::class, 'v4Method']);
+Route::get('/testimonial/v5', [TestimonialController::class, 'v5Method']);
+Route::get('/testimonial/v6', [TestimonialController::class, 'v6Method']);
+Route::get('/testimonial/v7', [TestimonialController::class, 'v7Method']);
+Route::get('/testimonial/v8', [TestimonialController::class, 'v8Method']);
+Route::get('/testimonial/v9', [TestimonialController::class, 'v9Method']);
