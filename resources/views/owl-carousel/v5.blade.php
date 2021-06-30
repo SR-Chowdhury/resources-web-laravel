@@ -13,28 +13,41 @@
 
     <title>Explore SuperStar World</title>
     <style>
+        .carousel-div .owl-carousel .item {
+            height: 10rem;
+            background: #4DC7A0;
+            padding: 1rem;
+        }
     </style>
   </head>
   <body>
-    <h1>Bismillahir Rahmanir Rahim</h1>
-    <div class="container">
-        <div class="owl-carousel owl-theme">
-            <div class="item"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-            <div class="item"><h4>7</h4></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
+
+    <h1 class="text-success text-center py-5">Merge</h1>
+
+    <section class="carousel-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" data-merge="1"><h2>1</h2></div>
+                        <div class="item" data-merge="2"><h2>2</h2></div>
+                        <div class="item" data-merge="1"><h2>3</h2></div>
+                        <div class="item" data-merge="3"><h2>4</h2></div>
+                        <div class="item" data-merge="6"><h2>6</h2></div>
+                        <div class="item" data-merge="2"><h2>7</h2></div>
+                        <div class="item" data-merge="1"><h2>8</h2></div>
+                        <div class="item" data-merge="3"><h2>9</h2></div>
+                        <div class="item"><h2>10</h2></div>
+                        <div class="item"><h2>11</h2></div>
+                        <div class="item" data-merge="2"><h2>12</h2></div>
+                        <div class="item"><h2>13</h2></div>
+                        <div class="item"><h2>14</h2></div>
+                        <div class="item"><h2>15</h2></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-
+    </section>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -43,19 +56,16 @@
     <script>
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
-                rtl:true,
+                items:5,
                 loop:true,
                 margin:10,
-                nav:true,
+                merge:true,
                 responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
+                    678:{
+                        mergeFit:true
                     },
                     1000:{
-                        items:5
+                        mergeFit:false
                     }
                 }
             });

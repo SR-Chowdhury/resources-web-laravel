@@ -8,6 +8,7 @@ use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\SideNavController;
 use App\Http\Controllers\CurbBackController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\OwlcarouselController;
 
 
 /*
@@ -71,3 +72,21 @@ Route::get('/testimonial/v6', [TestimonialController::class, 'v6Method']);
 Route::get('/testimonial/v7', [TestimonialController::class, 'v7Method']);
 Route::get('/testimonial/v8', [TestimonialController::class, 'v8Method']);
 Route::get('/testimonial/v9', [TestimonialController::class, 'v9Method']);
+/**
+ * Owl-Carousel Routes
+ */
+Route::get('/owl-carousel/v1', [OwlcarouselController::class, 'v1Method']);
+Route::get('/owl-carousel/v2', [OwlcarouselController::class, 'v2Method']);
+Route::get('/owl-carousel/v3', [OwlcarouselController::class, 'v3Method']);
+Route::get('/owl-carousel/v4', [OwlcarouselController::class, 'v4Method']);
+Route::get('/owl-carousel/v5', [OwlcarouselController::class, 'v5Method']);
+Route::get('/owl-carousel/v6', [OwlcarouselController::class, 'v6Method']);
+Route::get('/owl-carousel/v7', [OwlcarouselController::class, 'v7Method']);
+Route::get('/owl-carousel/v8', [OwlcarouselController::class, 'v8Method']);
+Route::get('/owl-carousel/v9', [OwlcarouselController::class, 'v9Method']);
+Route::get('/owl-carousel/v10', [OwlcarouselController::class, 'v10Method']);
+Route::get('/owl-carousel/v11', [OwlcarouselController::class, 'v11Method']);
+Route::get('/owl-carousel/v12', [OwlcarouselController::class, 'v12Method']);
+Route::get('/owl-carousel/v13', [OwlcarouselController::class, 'v13Method']);
+Route::get('/owl-carousel/v14', [OwlcarouselController::class, 'v14Method']);
+Route::get('/owl-carousel/v15', [OwlcarouselController::class, 'v15Method']);
