@@ -10,6 +10,7 @@ use App\Http\Controllers\CurbBackController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\OwlcarouselController;
 use App\Http\Controllers\FooterController;
+use App\Http\Controllers\AccordionController;
 
 
 /*
@@ -103,3 +104,9 @@ Route::get('/footer/v6', [FooterController::class, 'v6Method']);
 Route::get('/footer/v7', [FooterController::class, 'v7Method']);
 Route::get('/footer/v8', [FooterController::class, 'v8Method']);
 Route::get('/footer/v9', [FooterController::class, 'v9Method']);
+/**
+ * Accordion Routes
+ */
+Route::get('/accordion/v1', [AccordionController::class, 'v1Method']);
+Route::get('/accordion/v2', [AccordionController::class, 'v2Method']);
+Route::get('/accordion/v3', [AccordionController::class, 'v3Method']);
