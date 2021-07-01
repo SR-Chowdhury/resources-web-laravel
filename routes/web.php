@@ -9,6 +9,7 @@ use App\Http\Controllers\SideNavController;
 use App\Http\Controllers\CurbBackController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\OwlcarouselController;
+use App\Http\Controllers\FooterController;
 
 
 /*
@@ -90,3 +91,15 @@ Route::get('/owl-carousel/v12', [OwlcarouselController::class, 'v12Method']);
 Route::get('/owl-carousel/v13', [OwlcarouselController::class, 'v13Method']);
 Route::get('/owl-carousel/v14', [OwlcarouselController::class, 'v14Method']);
 Route::get('/owl-carousel/v15', [OwlcarouselController::class, 'v15Method']);
+/**
+ * Footer Routes
+ */
+Route::get('/footer/v1', [FooterController::class, 'v1Method']);
+Route::get('/footer/v2', [FooterController::class, 'v2Method']);
+Route::get('/footer/v3', [FooterController::class, 'v3Method']);
+Route::get('/footer/v4', [FooterController::class, 'v4Method']);
+Route::get('/footer/v5', [FooterController::class, 'v5Method']);
+Route::get('/footer/v6', [FooterController::class, 'v6Method']);
+Route::get('/footer/v7', [FooterController::class, 'v7Method']);
+Route::get('/footer/v8', [FooterController::class, 'v8Method']);
+Route::get('/footer/v9', [FooterController::class, 'v9Method']);
