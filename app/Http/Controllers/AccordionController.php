@@ -24,4 +24,7 @@ class AccordionController extends Controller
     public function v6Method () {
         return view('accordion.v6');
     }
+    public function v7Method () {
+        return view('accordion.v7');
+    }
 }
