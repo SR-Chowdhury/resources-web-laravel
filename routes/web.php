@@ -110,3 +110,6 @@ Route::get('/footer/v9', [FooterController::class, 'v9Method']);
 Route::get('/accordion/v1', [AccordionController::class, 'v1Method']);
 Route::get('/accordion/v2', [AccordionController::class, 'v2Method']);
 Route::get('/accordion/v3', [AccordionController::class, 'v3Method']);
+Route::get('/accordion/v4', [AccordionController::class, 'v4Method']);
+Route::get('/accordion/v5', [AccordionController::class, 'v5Method']);
+Route::get('/accordion/v6', [AccordionController::class, 'v6Method']);

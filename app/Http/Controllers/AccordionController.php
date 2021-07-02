@@ -15,4 +15,13 @@ class AccordionController extends Controller
     public function v3Method () {
         return view('accordion.v3');
     }
+    public function v4Method () {
+        return view('accordion.v4');
+    }
+    public function v5Method () {
+        return view('accordion.v5');
+    }
+    public function v6Method () {
+        return view('accordion.v6');
+    }
 }
