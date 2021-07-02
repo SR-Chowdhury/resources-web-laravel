@@ -11,6 +11,7 @@ use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\OwlcarouselController;
 use App\Http\Controllers\FooterController;
 use App\Http\Controllers\AccordionController;
+use App\Http\Controllers\AnimationController;
 
 
 /*
@@ -114,3 +115,15 @@ Route::get('/accordion/v4', [AccordionController::class, 'v4Method']);
 Route::get('/accordion/v5', [AccordionController::class, 'v5Method']);
 Route::get('/accordion/v6', [AccordionController::class, 'v6Method']);
 Route::get('/accordion/v7', [AccordionController::class, 'v7Method']);
+/**
+ * Animation Routes
+ */
+Route::get('/animation/v1', [AnimationController::class, 'v1Method']);
+Route::get('/animation/v2', [AnimationController::class, 'v2Method']);
+Route::get('/animation/v3', [AnimationController::class, 'v3Method']);
+Route::get('/animation/v4', [AnimationController::class, 'v4Method']);
+Route::get('/animation/v5', [AnimationController::class, 'v5Method']);
+Route::get('/animation/v6', [AnimationController::class, 'v6Method']);
+Route::get('/animation/v7', [AnimationController::class, 'v7Method']);
+Route::get('/animation/v8', [AnimationController::class, 'v8Method']);
+Route::get('/animation/v9', [AnimationController::class, 'v9Method']);

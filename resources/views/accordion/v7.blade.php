@@ -11,7 +11,7 @@
 <body>
 
     <h1>Vertical Accordion</h1>
-    <section>
+    <section style="text-align: center;">
         <div id="accordion3" class="accordionWrapper" style="width:486px;">
             <div class="set set1">
                 <div class="title"><img src="{{ asset('public/assets/accordion/accordionv5/images/menu1.jpg') }}"
