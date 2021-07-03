@@ -26,17 +26,23 @@
 
 <body>
     <h1 class="text-center text-success py-5 ">Animation v1</h1>
-
-    <div class="text">
-        <p>I Love</p>
-        <p>
-            <span class="word wisteria">JavaScript.</span>
-            <span class="word belize">CSS / CSS3.</span>
-            <span class="word pomegranate">HTML5.</span>
-            <span class="word green">Linux.</span>
-            <span class="word midnight">OS X.</span>
-        </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 offset-md-3">
+                <div class="text">
+                    <p>I Love</p>
+                    <p>
+                        <span class="word wisteria">JavaScript.</span>
+                        <span class="word belize">CSS / CSS3.</span>
+                        <span class="word pomegranate">HTML5.</span>
+                        <span class="word green">Linux.</span>
+                        <span class="word midnight">OS X.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
 
 
     <!-- Bootstrap Bundle with Popper -->
