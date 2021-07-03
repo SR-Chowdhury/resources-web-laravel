@@ -63,6 +63,12 @@ Route::get('/side-nav/v1', [SideNavController::class, 'v1Method']);
  * Curb - Background Routes
  */
 Route::get('/curb-background/v1', [CurbBackController::class, 'v1Method']);
+Route::get('/curb-background/v2', [CurbBackController::class, 'v2Method']);
+Route::get('/curb-background/v3', [CurbBackController::class, 'v3Method']);
+Route::get('/curb-background/v4', [CurbBackController::class, 'v4Method']);
+Route::get('/curb-background/v5', [CurbBackController::class, 'v5Method']);
+Route::get('/curb-background/v6', [CurbBackController::class, 'v6Method']);
+Route::get('/curb-background/v7', [CurbBackController::class, 'v7Method']);
 /**
  * Testimonial Routes
  */
